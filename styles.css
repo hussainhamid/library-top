@@ -43,3 +43,25 @@ body {
     padding-top: 10px;
 }
 
+
+form, form > div {
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+form > div:first-child {
+    padding-top: 20px;
+}
+
+#add-from-dialog {
+    border-radius: 50px;
+}
+
+dialog {
+    border-radius: 50px;
+}
+
+::backdrop {
+    opacity: 0.65;
+    background-color: grey;
+}

@@ -12,28 +12,25 @@ function book(title, author, pages) {
     this.pages = pages;
 }
 
-function addBookToLibrary() {
-    let title = document.getElementById('title').value;
-    let author = document.getElementById("author").value;
-    //let bookPages = document.getElementById("pages").value;
 
-    const newBook = new book(title, author);
+
+function addBookToLibrary() {
+    let bookTitle = document.getElementById("title").value;
+    let bookAuthor = document.getElementById("author").value;
+    let bookPages = document.getElementById("page").value;
+
+    const newBook = new book(bookTitle, bookAuthor, bookPages);
     myLibrary.push(newBook);
-    render()
 }
 
-addBookToLibrary()
 
-function render () {
-
-    for (let i = 0; i < myLibrary.length; i++) {
-        console.log(myLibrary[i]);
-    }
-
-addBtn.addEventListener('click', () => {
+addBtn.addEventListener('click', function() {
     dialog.showModal();
 })
     addBtn2.addEventListener("click", function(event) {
+        let bookTitle = document.getElementById("title").value;
+        let bookAuthor = document.getElementById("author").value;
+        let bookPages = document.getElementById("page").value;
         event.preventDefault();
         dialog.close();
         newCard = document.createElement("div");
@@ -42,20 +39,19 @@ addBtn.addEventListener('click', () => {
 
         newTitle = document.createElement("p");
         newTitle.className = "info";
-        newTitleText = document.createTextNode("Name: ");
+        newTitleText = document.createTextNode(`Name: \u00A0\u00A0${bookTitle}`);
         newTitle.appendChild(newTitleText);1
         newCard.appendChild(newTitle);
 
         newAuthor = document.createElement("p");
         newAuthor.className = "info";
-        newAuthorText = document.createTextNode("Author: ");
+        newAuthorText = document.createTextNode(`Author: \u00A0\u00A0${bookAuthor}`);
         newAuthor.appendChild(newAuthorText);
         newCard.appendChild(newAuthor);
 
         newPage = document.createElement("p");
         newPage.className = "info";
-        newPageText = document.createTextNode("pages: ");
+        newPageText = document.createTextNode(`pages: \u00A0\u00A0${bookPages}`);
         newPage.appendChild(newPageText);
         newCard.appendChild(newPage);
 })
-}

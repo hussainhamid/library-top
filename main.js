@@ -12,7 +12,7 @@ function book(title, author, pages) {
     this.pages = pages;
 }
 
-
+console.log("checking");
 
 function addBookToLibrary() {
     let bookTitle = document.getElementById("title").value;

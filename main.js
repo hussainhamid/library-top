@@ -6,13 +6,15 @@ const dialog = document.querySelector("dialog");
 
 let myLibrary = [];
 
-function book(title, author, pages) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
+class book {
+    constructor() {
+        this.title = title;
+        this.author = author;
+        this.page = page;
+    }
 }
 
-console.log("checking");
+
 
 function addBookToLibrary() {
     let bookTitle = document.getElementById("title").value;

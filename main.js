@@ -62,9 +62,7 @@ addBtn2.addEventListener("click", function (event) {
 // form validation code
 
 const bookTitle = document.getElementById("title");
-const bookAuthor = document.getElementById("author");
 const bookPages = document.getElementById("page");
-const dialogBtn = document.getElementById("add-from-dialog");
 
 function checkValidity() {
   let isValid = true;

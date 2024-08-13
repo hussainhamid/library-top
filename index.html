@@ -10,6 +10,7 @@
     
 </head>
         
+
 <body class="p-3 mb-2 bg-dark text-white">
 
     <h1 class="heading">Library</h1>
@@ -20,19 +21,19 @@
     <dialog>
         <form>
             <div>
-                <label for="title">Book name  </label>
-                <input type="text" id="title" name="title"></input>
+                <label for="title">* Book name  </label>
+                <input required type="text" id="title" name="title"></input>
             </div>
             <div>
-                <label for="author">Author name</label>
+                <label for="author"> Author name</label>
                 <input type="text" id="author" name="author"></input>
             </div>
             <div>
-                <label for="page">No. of pages</label>
-                <input type="number" id="page" name="page"></input>
+                <label for="page">* No. of pages</label>
+                <input required type="number" id="page" name="page"></input>
             </div> 
             <div>
-                <button id="add-from-dialog" onclick="addBookToLibrary()">Add book</button>
+                <button id="add-from-dialog" onclick="addBookToLibrary(), checkValidity()">Add book</button>
             </div>
         </form>
     </dialog>

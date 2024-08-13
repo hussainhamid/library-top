@@ -1,67 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .heading {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid grey;
-   
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
 }
 
-
 .add {
-    font-size: 30px;
-    height: 50px;
-    border-radius: 50px;
+  font-size: 30px;
+  height: 50px;
+  border-radius: 50px;
 }
 
 .add-div {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
-
 
 .card {
-    border: 2px solid grey;
-    background-color: #212529;
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 10px;
+  border: 2px solid grey;
+  background-color: #212529;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-
 .info {
-    padding-bottom: 10px;
-    padding-left: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .info:first-child {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
-
-form, form > div {
-    padding-bottom: 20px;
-    text-align: start;
+form,
+form > div {
+  padding-bottom: 20px;
+  text-align: start;
 }
 
 form > div:first-child {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #add-from-dialog {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 dialog {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 ::backdrop {
-    opacity: 0.65;
-    background-color: grey;
+  opacity: 0.65;
+  background-color: grey;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid rgb(17, 179, 17);
 }
